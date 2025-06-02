@@ -29,9 +29,13 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
 		<attributes>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			<attribute name="module" value="true"/>
 >>>>>>> 06e6bbe (Adding files via gitbash)
+=======
+			<attribute name="module" value="true"/>
+>>>>>>> 7c5638c (Added invalid functionality)
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>

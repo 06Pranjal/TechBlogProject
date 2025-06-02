@@ -10,15 +10,10 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-<<<<<<< HEAD
-
-import com.tech.blog.dao.RegisterDao;
-=======
 import java.security.MessageDigest;
 
 import com.tech.blog.dao.RegisterDao;
 import com.tech.blog.entities.Message;
->>>>>>> 06e6bbe (Adding files via gitbash)
 import com.tech.blog.entities.User;
 import com.tech.blog.helper.ConnectionProvider;
 
@@ -53,13 +48,11 @@ public class LoginServlet extends HttpServlet {
                 
                 if(u==null) {
                 	
-<<<<<<< HEAD
-                	out.println("Invalid Details"); 
-=======
-                	Message msg=new Message("Invalid Details","error","alert-danger");
+                	Message msg=new Message("Invalid Details !! Try again","error","alert-danger");
+                	HttpSession s =request.getSession();
+                	s.setAttribute("msg", msg);
                 	
                 	response.sendRedirect("login_page.jsp");
->>>>>>> 06e6bbe (Adding files via gitbash)
                 	
                 }else {
                 	
@@ -75,6 +68,7 @@ public class LoginServlet extends HttpServlet {
             System.out.println("Exception occurred: " + e.getMessage());
             e.printStackTrace();
         }
+       
 
         
     }
@@ -98,3 +92,6 @@ public class LoginServlet extends HttpServlet {
     }
 
 }
+
+
+	

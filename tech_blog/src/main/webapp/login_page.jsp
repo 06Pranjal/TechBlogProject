@@ -1,3 +1,5 @@
+<%@ page import="com.tech.blog.entities.Message" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -82,6 +84,19 @@
     <div class="main-container">
         <div class="card">
             <h3 class="text-center mb-4"><i class="fas fa-user-circle"></i> Login to Blog World</h3>
+            
+            <%
+            Message m = (Message) session.getAttribute("msg");
+            if (m != null) {
+        %>
+            <div class="alert alert-primary" role="alert">
+                <%= m.getContent() %>
+            </div>
+        <%
+                session.removeAttribute("msg");
+            }
+        %>
+            
             <form action="LoginServlet" method="post">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
