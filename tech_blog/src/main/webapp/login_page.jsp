@@ -86,16 +86,17 @@
             <h3 class="text-center mb-4"><i class="fas fa-user-circle"></i> Login to Blog World</h3>
             
             <%
-            Message m = (Message) session.getAttribute("msg");
-            if (m != null) {
-        %>
-            <div class="alert alert-primary" role="alert">
-                <%= m.getContent() %>
-            </div>
-        <%
-                session.removeAttribute("msg");
-            }
-        %>
+Message m = (Message) session.getAttribute("msg");
+if (m != null && m.getContent() != null) {
+%>
+<div class="alert alert-primary" role="alert">
+    <%= m.getContent() %>
+</div>
+<%
+    session.removeAttribute("msg");
+}
+%>
+
             
             <form action="LoginServlet" method="post">
                 <div class="mb-3">
