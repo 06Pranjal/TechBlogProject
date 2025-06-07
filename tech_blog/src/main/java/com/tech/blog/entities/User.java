@@ -84,8 +84,9 @@ public class User {
 	}
 
 	public String getProfile() {
-		return profile;
+	    return (profile == null || profile.trim().isEmpty()) ? 'default.png' : profile;
 	}
+
 
 	public void setProfile(String profile) {
 		this.profile = profile;
