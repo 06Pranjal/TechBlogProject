@@ -94,12 +94,39 @@ if(user==null){
         </button>
       </div>
       <div class="modal-body">
-      <%=user.getProfile() %>
-        <div class="container text-center"><%= user.getName() %></div>
+      
+        <div class="container text-center">
+        <img alt="pic" src="pics/<%= user.getProfile() %>"> 
+        <h5 class="modal-title" id="exampleModalLabel"><%= user.getName() %></h5>
+        <table class="table">
+  <tbody>
+    <tr>
+      <th scope="row">Id:-</th>
+      <td><%=user.getId() %></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Email:-</th>
+      <td><%=user.getEmail() %></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Gender:-</th>
+      <td><%=user.getGender() %></td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Register Date:-</th>
+      <td><%=user.getDateTime() %></td>
+      
+    </tr>
+  </tbody>
+</table>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Edit Profile</button>
       </div>
     </div>
   </div>

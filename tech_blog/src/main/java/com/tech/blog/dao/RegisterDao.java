@@ -74,7 +74,7 @@ public class RegisterDao {
 				user.setEmail(set.getString("email"));
 				user.setPassword(set.getString("password"));
 				user.setGender(set.getString("gender"));
-				user.setDateTime(set.getTimestamp("dateTime"));
+				user.setDateTime(set.getTimestamp("created_at"));
 				user.setProfile(set.getString("profile"));
 				
 				
