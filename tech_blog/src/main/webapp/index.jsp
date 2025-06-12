@@ -43,7 +43,7 @@
 				<div class="card h-100">
 					<img src="images/post 1.webp" class="card-img-top" alt="Blog Image">
 					<div class="card-body">
-						<h5 class="card-title">Post Title 1</h5>
+						<h5 class="card-title">Spring Boot</h5>
 						<p class="card-text">This is a short summary of the first blog
 							post. It gives a preview of the content.</p>
 						<a href="#" class="btn btn-primary">Read More</a>
