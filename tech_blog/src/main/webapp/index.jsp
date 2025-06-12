@@ -69,7 +69,7 @@
 				<div class="card h-100">
 					<img src="images/post 1.webp" class="card-img-top" alt="Blog Image">
 					<div class="card-body">
-						<h5 class="card-title">Post Title 3</h5>
+						<h5 class="card-title">Servlet And JSP</h5>
 						<p class="card-text">This post talks about productivity tips
 							for students and professionals alike.</p>
 						<a href="#" class="btn btn-primary">Read More</a>
